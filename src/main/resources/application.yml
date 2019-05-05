@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: itoken-config
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  cloud:
+    label: master
+    server:
+      git:
+        url: https://github.com/itoken-enda-lin/itoken-config-file
+        search-paths:
+        username: account
+        password: password
+  zipkin:
+    base-url: http://localhost:9411
+
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    server-url:
+      defauleZone: http://localhost:8761/eureka/
