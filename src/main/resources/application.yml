@@ -11,11 +11,12 @@ spring:
       server:
         git:
           uri: https://github.com/itoken-enda-lin/itoken-config-file
+          force-pull: true
+          search-paths: repo
           username: account
           password: password
   zipkin:
     base-url: http://localhost:9411
-
 
 server:
   port: 8888
@@ -23,4 +24,4 @@ server:
 eureka:
   client:
     server-url:
-      defauleZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
