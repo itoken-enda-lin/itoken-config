@@ -24,4 +24,4 @@ server:
 eureka:
   client:
     server-url:
-      defaultZone: http://172.28.7.36:8761/eureka/
+      defaultZone: http://172.28.7.46:8761/eureka/
